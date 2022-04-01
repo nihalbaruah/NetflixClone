@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Browse</title>
+    <link rel="stylesheet" href="browse.css" />
+</head>
+
+<body>
+    <!-- nav -->
+    <div id="nav" class="nav">
+        <a href="index.html"><img class="nav__logo" src="images/netflix-logo.png" alt="" /></a>
+        <div class="nav-subcontent">
+            <h3><a href="#series">Series</a></h3>
+            <h3><a href="#flims">Flims</a></h3>
+        </div>
+    </div>
+
+    <!-- header -->
+    <header class="banner">
+        <div class="banner__contents">
+            <h1 class="banner__title">Joker</h1>
+
+            <h1 class="banner__description">
+                Forever alone in a crowd, failed comedian Arthur Fleck seeks connection as he walks the streets of Gotham City. Arthur wears two masks -- the one he paints for his day job as a clown, and the guise he projects in a futile attempt to feel like he's part
+                of the world around him.
+            </h1>
+
+            <div id="light">
+                <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+                <video id="VisaChipCardVideo" controls>
+            <source
+              src="Vid/JOKER - Final Trailer - Now Playing In Theaters.mp4"
+              type="video/mp4"
+            />
+          </video>
+            </div>
+
+            <div id="fade" onClick="lightbox_close();"></div>
+
+            <div class="banner__buttons">
+                <button class="banner__button" onclick="lightbox_open();">
+            Play
+          </button>
+            </div>
+        </div>
+        <div class="banner--fadeBottom"></div>
+    </header>
+
+    <!-- Netflix Originals -->
+    <div class="row1">
+        <h2>NETFLIX ORIGINALS</h2>
+        <div class="row__posters">
+            <button onclick="w3.toggleShow('.description')">
+          <img
+            class="row__poster row__posterLarge"
+            src="images/large-movie1.jpg"
+            alt=""
+          />
+        </button>
+
+            <button onclick="w3.toggleShow('.description')">
+          <img
+            class="row__poster row__posterLarge"
+            src="images/large-movie2.jpg"
+            alt=""
+          />
+        </button>
+
+            <button onclick="w3.toggleShow('.description')">
+          <img
+            class="row__poster row__posterLarge"
+            src="images/large-movie3.jpg"
+            alt=""
+          />
+        </button>
+
+            <button onclick="w3.toggleShow('.description')">
+          <img
+            class="row__poster row__posterLarge"
+            src="images/large-movie4.jpg"
+            alt=""
+          />
+        </button>
+
+            <button onclick="w3.toggleShow('.description')">
+          <img
+            class="row__poster row__posterLarge"
+            src="images/large-movie5.jpg"
+            alt=""
+          />
+        </button>
+
+            <button onclick="w3.toggleShow('.description')">
+          <img
+            class="row__poster row__posterLarge"
+            src="images/large-movie6.jpg"
+            alt=""
+          />
+        </button>
+
+            <button onclick="w3.toggleShow('.description')">
+          <img
+            class="row__poster row__posterLarge"
+            src="images/large-movie7.jpg"
+            alt=""
+          />
+        </button>
+
+            <button onclick="w3.toggleShow('.description')">
+          <img
+            class="row__poster row__posterLarge"
+            src="images/large-movie8.jpg"
+            alt=""
+          />
+        </button>
+        </div>
+        <div class="description hide">
+            <p>
+                Micky, a young, naturally talented singer, enjoys life, love and security with his beloved mother, but when he turns 11, his father tries to turn him into a superstar.
+            </p>
+            <div class="banner__buttons">
+                <button class="banner__button" onclick="lightbox_open();">
+            Play
+          </button>
+                <img src="images/luismiguel.jpg" alt="" />
+
+            </div>
+        </div>
+
+        <!-- Trending Now -->
+        <div class="row2">
+            <h2 id="series">Trending Series</h2>
+            <div class="row__posters">
+                <button onclick="w3.toggleShow('.description1')">
+          <img class="row__poster" src="images/sexeducation.jpg" alt="" />
+        </button>
+                <button onclick="w3.toggleShow('.description1')">
+          <img class="row__poster" src="images/allofusaredead.jpg" alt="" />
+        </button>
+                <button onclick="w3.toggleShow('.description1')">
+          <img class="row__poster" src="images/moneyheist.jpg" alt="" />
+        </button>
+                <button onclick="w3.toggleShow('.description1')">
+          <img class="row__poster" src="images/sexeducation.jpg" alt="" />
+        </button>
+                <button onclick="w3.toggleShow('.description1')">
+          <img class="row__poster" src="images/small-movie1.jpg" alt="" />
+        </button>
+
+                <button onclick="w3.toggleShow('.description1')">
+          <img class="row__poster" src="images/small-movie2.jpg" alt="" />
+        </button>
+
+                <button onclick="w3.toggleShow('.description1')">
+          <img class="row__poster" src="images/small-movie3.jpg" alt="" />
+        </button>
+
+                <button onclick="w3.toggleShow('.description1')">
+          <img class="row__poster" src="images/small-movie4.jpg" alt="" />
+        </button>
+
+                <button onclick="w3.toggleShow('.description1')">
+          <img class="row__poster" src="images/small-movie5.jpg" alt="" />
+        </button>
+
+                <button onclick="w3.toggleShow('.description1')">
+          <img class="row__poster" src="images/small-movie6.jpg" alt="" />
+        </button>
+
+                <button onclick="w3.toggleShow('.description1')">
+          <img class="row__poster" src="images/small-movie7.jpg" alt="" />
+        </button>
+
+                <button onclick="w3.toggleShow('.description1')">
+          <img class="row__poster" src="images/small-movie8.jpg" alt="" />
+        </button>
+            </div>
+            <div class="description1 hide">
+                <p>
+                    Micky, a young, naturally talented singer, enjoys life, love and security with his beloved mother, but when he turns 11, his father tries to turn him into a superstar.
+                </p>
+                <div class="banner__buttons">
+                    <button class="banner__button" onclick="lightbox_open();">
+            Play
+          </button>
+                    <img src="images/luismiguel.jpg" alt="" />
+                </div>
+            </div>
+
+            <!-- Top Rated -->
+            <div class="row3">
+                <h2>Drama</h2>
+                <div class="row__posters">
+                    <button onclick="w3.toggleShow('.description2')">
+          <img class="row__poster" src="images/joker.jpg" alt="" />
+        </button>
+                    <button onclick="w3.toggleShow('.description2')">
+          <img class="row__poster" src="images/sacredgames.jpg" alt="" />
+        </button>
+                    <button onclick="w3.toggleShow('.description2')">
+          <img class="row__poster" src="images/ludo.jpg" alt="" />
+        </button>
+                    <button onclick="w3.toggleShow('.description2')">
+          <img class="row__poster" src="images/ozark.jpg" alt="" />
+        </button>
+                    <button onclick="w3.toggleShow('.description2')">
+          <img class="row__poster" src="images/raatakelihai.jpg" alt="" />
+        </button>
+                    <button onclick="w3.toggleShow('.description2')">
+          <img class="row__poster" src="images/Narcosmexico.jpg" alt="" />
+        </button>
+                    <button onclick="w3.toggleShow('.description2')">
+          <img class="row__poster" src="images/small-movie1.jpg" alt="" />
+        </button>
+
+                    <button onclick="w3.toggleShow('.description2')">
+          <img class="row__poster" src="images/small-movie2.jpg" alt="" />
+        </button>
+
+                    <button onclick="w3.toggleShow('.description2')">
+          <img class="row__poster" src="images/small-movie3.jpg" alt="" />
+        </button>
+
+                    <button onclick="w3.toggleShow('.description2')">
+          <img class="row__poster" src="images/small-movie4.jpg" alt="" />
+        </button>
+
+                    <button onclick="w3.toggleShow('.description2')">
+          <img class="row__poster" src="images/small-movie5.jpg" alt="" />
+        </button>
+
+                    <button onclick="w3.toggleShow('.description2')">
+          <img class="row__poster" src="images/small-movie6.jpg" alt="" />
+        </button>
+
+                    <button onclick="w3.toggleShow('.description2')">
+          <img class="row__poster" src="images/small-movie7.jpg" alt="" />
+        </button>
+
+                    <button onclick="w3.toggleShow('.description2')">
+          <img class="row__poster" src="images/small-movie8.jpg" alt="" />
+        </button>
+                </div>
+                <div class="description2 hide">
+                    <p>
+                        Micky, a young, naturally talented singer, enjoys life, love and security with his beloved mother, but when he turns 11, his father tries to turn him into a superstar.
+                    </p>
+                    <div class="banner__buttons">
+                        <button class="banner__button" onclick="lightbox_open();">
+            Play
+          </button>
+                        <img src="images/luismiguel.jpg" alt="" />
+                    </div>
+                </div>
+
+                <!-- Action Movies -->
+                <div class="row3">
+                    <h2 id="flims">Action Movies</h2>
+                    <div class="row__posters">
+                        <button onclick="w3.toggleShow('.description8')">
+          <img class="row__poster" src="images/6underground.jpg" alt="" />
+        </button>
+                        <button onclick="w3.toggleShow('.description8')">
+          <img class="row__poster" src="images/extraction.jpg" alt="" />
+        </button>
+                        <button onclick="w3.toggleShow('.description8')">
+          <img class="row__poster" src="images/gunjansaxena.jpg" alt="" />
+        </button>
+
+                        <button onclick="w3.toggleShow('.description8')">
+          <img class="row__poster" src="images/small-movie1.jpg" alt="" />
+        </button>
+
+                        <button onclick="w3.toggleShow('.description8')">
+          <img class="row__poster" src="images/small-movie2.jpg" alt="" />
+        </button>
+
+                        <button onclick="w3.toggleShow('.description8')">
+          <img class="row__poster" src="images/small-movie3.jpg" alt="" />
+        </button>
+
+                        <button onclick="w3.toggleShow('.description8')">
+          <img class="row__poster" src="images/small-movie4.jpg" alt="" />
+        </button>
+
+                        <button onclick="w3.toggleShow('.description8')">
+          <img class="row__poster" src="images/small-movie5.jpg" alt="" />
+        </button>
+
+                        <button onclick="w3.toggleShow('.description8')">
+          <img class="row__poster" src="images/small-movie6.jpg" alt="" />
+        </button>
+
+                        <button onclick="w3.toggleShow('.description8')">
+          <img class="row__poster" src="images/small-movie7.jpg" alt="" />
+        </button>
+
+                        <button onclick="w3.toggleShow('.description8')">
+          <img class="row__poster" src="images/small-movie8.jpg" alt="" />
+        </button>
+                    </div>
+                    <div class="description8 hide">
+                        <p>
+                            Micky, a young, naturally talented singer, enjoys life, love and security with his beloved mother, but when he turns 11, his father tries to turn him into a superstar.
+                        </p>
+                        <div class="banner__buttons">
+                            <button class="banner__button" onclick="lightbox_open();">
+            Play
+          </button>
+                            <img src="images/luismiguel.jpg" alt="" />
+                        </div>
+                    </div>
+
+                    <!-- Comedy Movies -->
+                    <div class="row4">
+                        <h2>Comedy Movies</h2>
+                        <div class="row__posters">
+                            <button onclick="w3.toggleShow('.description4')">
+          <img class="row__poster" src="images/hangover.jpg" alt="" />
+        </button>
+                            <button onclick="w3.toggleShow('.description4')">
+          <img class="row__poster" src="images/minnal.jpg" alt="" />
+        </button>
+                            <button onclick="w3.toggleShow('.description4')">
+          <img class="row__poster" src="images/rednotice.jpg" alt="" />
+        </button>
+                            <button onclick="w3.toggleShow('.description4')">
+          <img class="row__poster" src="images/small-movie4.jpg" alt="" />
+        </button>
+
+                            <button onclick="w3.toggleShow('.description4')">
+          <img class="row__poster" src="images/small-movie5.jpg" alt="" />
+        </button>
+
+                            <button onclick="w3.toggleShow('.description4')">
+          <img class="row__poster" src="images/small-movie6.jpg" alt="" />
+        </button>
+
+                            <button onclick="w3.toggleShow('.description4')">
+          <img class="row__poster" src="images/small-movie7.jpg" alt="" />
+        </button>
+
+                            <button onclick="w3.toggleShow('.description4')">
+          <img class="row__poster" src="images/small-movie8.jpg" alt="" />
+        </button>
+                        </div>
+                        <div class="description4 hide">
+                            <p>
+                                Micky, a young, naturally talented singer, enjoys life, love and security with his beloved mother, but when he turns 11, his father tries to turn him into a superstar.
+                            </p>
+                            <div class="banner__buttons">
+                                <button class="banner__button" onclick="lightbox_open();">
+            Play
+          </button>
+                                <img src="images/luismiguel.jpg" alt="" />
+                            </div>
+                        </div>
+
+                        <!-- Horror Movies -->
+                        <div class="row5">
+                            <h2>Horror Movies</h2>
+                            <div class="row__posters">
+                                <button onclick="w3.toggleShow('.description5')">
+          <img class="row__poster" src="images/horror1.jpg" alt="" />
+        </button>
+                                <button onclick="w3.toggleShow('.description5')">
+          <img class="row__poster" src="images/horror2.jpg" alt="" />
+        </button>
+                                <button onclick="w3.toggleShow('.description5')">
+          <img class="row__poster" src="images/horror3.jpg" alt="" />
+        </button>
+                                <button onclick="w3.toggleShow('.description5')">
+          <img class="row__poster" src="images/horror4.jpg" alt="" />
+        </button>
+                                <button onclick="w3.toggleShow('.description5')">
+          <img class="row__poster" src="images/horror5.jpg" alt="" />
+        </button>
+                                <button onclick="w3.toggleShow('.description5')">
+          <img class="row__poster" src="images/small-movie6.jpg" alt="" />
+        </button>
+
+                                <button onclick="w3.toggleShow('.description5')">
+          <img class="row__poster" src="images/small-movie7.jpg" alt="" />
+        </button>
+
+                                <button onclick="w3.toggleShow('.description5')">
+          <img class="row__poster" src="images/small-movie8.jpg" alt="" />
+        </button>
+                            </div>
+                            <div class="description5 hide">
+                                <p>
+                                    Micky, a young, naturally talented singer, enjoys life, love and security with his beloved mother, but when he turns 11, his father tries to turn him into a superstar.
+                                </p>
+                                <div class="banner__buttons">
+                                    <button class="banner__button" onclick="lightbox_open();">
+            Play
+          </button>
+                                    <img src="images/luismiguel.jpg" alt="" />
+                                </div>
+                            </div>
+
+                            <!-- Romance Movies -->
+                            <div class="row6">
+                                <h2>Romance Movies</h2>
+                                <div class="row__posters">
+                                    <button onclick="w3.toggleShow('.description6')">
+          <img class="row__poster" src="images/small-movie1.jpg" alt="" />
+        </button>
+
+                                    <button onclick="w3.toggleShow('.description6')">
+          <img class="row__poster" src="images/small-movie2.jpg" alt="" />
+        </button>
+
+                                    <button onclick="w3.toggleShow('.description6')">
+          <img class="row__poster" src="images/small-movie3.jpg" alt="" />
+        </button>
+
+                                    <button onclick="w3.toggleShow('.description6')">
+          <img class="row__poster" src="images/small-movie4.jpg" alt="" />
+        </button>
+
+                                    <button onclick="w3.toggleShow('.description6')">
+          <img class="row__poster" src="images/small-movie5.jpg" alt="" />
+        </button>
+
+                                    <button onclick="w3.toggleShow('.description6')">
+          <img class="row__poster" src="images/small-movie6.jpg" alt="" />
+        </button>
+
+                                    <button onclick="w3.toggleShow('.description6')">
+          <img class="row__poster" src="images/small-movie7.jpg" alt="" />
+        </button>
+
+                                    <button onclick="w3.toggleShow('.description6')">
+          <img class="row__poster" src="images/small-movie8.jpg" alt="" />
+        </button>
+                                </div>
+                                <div class="description6 hide">
+                                    <p>
+                                        Micky, a young, naturally talented singer, enjoys life, love and security with his beloved mother, but when he turns 11, his father tries to turn him into a superstar.
+                                    </p>
+                                    <div class="banner__buttons">
+                                        <button class="banner__button" onclick="lightbox_open();">
+            Play
+          </button>
+                                        <img src="images/luismiguel.jpg" alt="" />
+                                    </div>
+                                </div>
+
+                                <!-- Documentaries -->
+                                <div class="row7">
+                                    <h2>Documentaries</h2>
+                                    <div class="row__posters">
+                                        <button onclick="w3.toggleShow('.description7')">
+          <img class="row__poster" src="images/small-movie1.jpg" alt="" />
+        </button>
+
+                                        <button onclick="w3.toggleShow('.description7')">
+          <img class="row__poster" src="images/small-movie2.jpg" alt="" />
+        </button>
+
+                                        <button onclick="w3.toggleShow('.description7')">
+          <img class="row__poster" src="images/small-movie3.jpg" alt="" />
+        </button>
+
+                                        <button onclick="w3.toggleShow('.description7')">
+          <img class="row__poster" src="images/small-movie4.jpg" alt="" />
+        </button>
+
+                                        <button onclick="w3.toggleShow('.description7')">
+          <img class="row__poster" src="images/small-movie5.jpg" alt="" />
+        </button>
+
+                                        <button onclick="w3.toggleShow('.description7')">
+          <img class="row__poster" src="images/small-movie6.jpg" alt="" />
+        </button>
+
+                                        <button onclick="w3.toggleShow('.description7')">
+          <img class="row__poster" src="images/small-movie7.jpg" alt="" />
+        </button>
+
+                                        <button onclick="w3.toggleShow('.description7')">
+          <img class="row__poster" src="images/small-movie8.jpg" alt="" />
+        </button>
+                                    </div>
+                                    <div class="description7 hide">
+                                        <p>
+                                            Micky, a young, naturally talented singer, enjoys life, love and security with his beloved mother, but when he turns 11, his father tries to turn him into a superstar.
+                                        </p>
+                                        <div class="banner__buttons">
+                                            <button class="banner__button" onclick="lightbox_open();">
+            Play
+          </button>
+                                            <img src="images/luismiguel.jpg" alt="" />
+                                        </div>
+                                    </div>
+
+                                    <footer class="footer">
+                                        <p>Questions? Call 1-866-579-7172</p>
+                                        <div class="footer-cols">
+                                            <ul>
+                                                <li><a href="#">FAQ</a></li>
+                                                <li><a href="#">Investor Relations</a></li>
+                                                <li><a href="#">Ways To Watch</a></li>
+                                                <li><a href="#">Corporate Information</a></li>
+                                                <li><a href="#">Netflix Originals</a></li>
+                                            </ul>
+                                            <ul>
+                                                <li><a href="#">Help Center</a></li>
+                                                <li><a href="#">Jobs</a></li>
+                                                <li><a href="#">Terms Of Use</a></li>
+                                                <li><a href="#">Contact Us</a></li>
+                                            </ul>
+                                            <ul>
+                                                <li><a href="#">Account</a></li>
+                                                <li><a href="#">Redeem Gift Cards</a></li>
+                                                <li><a href="#">Privacy</a></li>
+                                                <li><a href="#">Speed Test</a></li>
+                                            </ul>
+                                            <ul>
+                                                <li><a href="#">Media Center</a></li>
+                                                <li><a href="#">Buy Gift Cards</a></li>
+                                                <li><a href="#">Cookie Preferences</a></li>
+                                                <li><a href="#">Legal Notices</a></li>
+                                            </ul>
+                                        </div>
+                                    </footer>
+
+                                    <script src="browse.js"></script>
+                                    <script src="https://www.w3schools.com/lib/w3.js"></script>
+</body>
+
+</html>
